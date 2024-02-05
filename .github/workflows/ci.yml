@@ -20,5 +20,5 @@ jobs:
       - name: Run a multi-line script
         shell: pwsh
         run: |
-        write-host $psversiontable
-        write-host 'hello world'
+          write-host $psversiontable
+          write-host 'hello world'
