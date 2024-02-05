@@ -26,5 +26,5 @@ jobs:
       - name: Run tests
         shell: pwsh
         run: |
-          Install-Module Pester -Force -Scope CurrentUser
+          Install-Module Pester, PSScriptAnalyzer -Force -Scope CurrentUser
           ./TestExecutor.ps1
