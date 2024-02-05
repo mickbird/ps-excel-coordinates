@@ -23,10 +23,10 @@ jobs:
           sudo apt update
           sudo apt install powershell
 
-      - name: Run PowerShell dependencies
+      - name: Install PowerShell dependencies
         shell: pwsh
         run: Install-Module Pester, PSScriptAnalyzer -Force -Scope CurrentUser
 
-      - name: pester-tests-report
-        uses: zyborg/pester-tests-report@v1.5.0
-      
+      - name: Run tests
+        shell: pwsh
+        run: ./TestExecutor.ps1
