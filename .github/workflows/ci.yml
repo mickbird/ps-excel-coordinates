@@ -25,4 +25,6 @@ jobs:
 
       - name: Run tests
         shell: pwsh
-        run: ./TestExecutor.ps1
+        run: |
+          Install-Module -Name Pester
+          ./TestExecutor.ps1
