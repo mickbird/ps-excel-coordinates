@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted Linux x64
 
     steps:
       - uses: actions/checkout@v4
