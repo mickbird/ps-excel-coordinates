@@ -8,13 +8,12 @@ on:
 
 jobs:
   build:
-    # The type of runner that the job will run on
     runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
+      - name: Install dependencies
         shell: bash
         run: |
           sudo apt-get update
@@ -24,10 +23,6 @@ jobs:
           sudo apt update
           sudo apt install powershell
 
-      - name: Run a multi-line script
+      - name: Run tests
         shell: pwsh
-        run: |
-          write-host $psversiontable
-          write-host 'hello world'
-          write-host 'hello'
-          Start-Sleep -Second 60
+        run: ./TestExecutor.ps1
