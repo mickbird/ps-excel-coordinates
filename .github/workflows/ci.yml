@@ -22,4 +22,5 @@ jobs:
         run: |
           write-host $psversiontable
           write-host 'hello world'
-          write-host 'hello world'
+          write-host 'hello'
+          Start-Sleep -Second 20
