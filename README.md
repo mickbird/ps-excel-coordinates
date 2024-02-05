@@ -1,0 +1,1 @@
+[![CI](https://github.com/mickbird/ps-excel-coordinates/actions/workflows/ci.yml/badge.svg)](https://github.com/mickbird/ps-excel-coordinates/actions/workflows/ci.yml)
